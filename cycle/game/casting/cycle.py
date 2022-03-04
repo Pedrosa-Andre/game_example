@@ -2,7 +2,7 @@ from game.casting.actor import Actor
 import game.shared.gamecontants as gameconstants
 
 from game.services.keyboard_service_flex import KeyboardServiceFlex
-from game.shared.point import Point
+
 
 class Cycle(Actor):
     """

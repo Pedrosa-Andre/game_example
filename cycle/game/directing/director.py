@@ -1,5 +1,6 @@
 from game.casting.trail import Trail
 
+
 class Director:
     """A person who directs the game. 
 

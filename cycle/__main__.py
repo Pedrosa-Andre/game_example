@@ -1,6 +1,5 @@
 import game.shared.gamecontants as gameconstants
 
-from game.casting.actor import Actor
 from game.casting.cast import Cast
 from game.casting.cycle import Cycle
 
@@ -28,7 +27,7 @@ def main():
     cast.add_actor("banners", banner)
     """
 
-    position = Point(int(gameconstants.COLS / 3), int(gameconstants.ROWS / 2))
+    position = Point(int(gameconstants.COLS / 3), int(gameconstants.ROWS / 2)) #just a facy way of positioning proportionally to the screen size
     position = position.scale(gameconstants.CELL_SIZE)
     cycle1 = Cycle(position, 1)
     cycle1.set_velocity(Point(0, 0))
@@ -54,7 +53,6 @@ def main():
         )
     director = Director(keyboard_service, display_service)
     director.start_game(cast)
-
 
 if __name__ == "__main__":
     main()

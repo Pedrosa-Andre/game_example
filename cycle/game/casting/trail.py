@@ -1,5 +1,6 @@
 from game.casting.actor import Actor
 
+
 class Trail(Actor):
     """
     """
